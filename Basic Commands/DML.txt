@@ -26,3 +26,11 @@ mysql> select * from student;
 | Ankit | ankit@gmail.com | 2021-08-03 | 1       |                                                                                                                                                                                                                      
 +-------+-----------------+------------+---------+ 
 1 rows in set (0.00 sec)
+
+mysql> select roll_no as roll from student;                                                                                                                   
++------+                                                                                                                                                      
+| roll |                                                                                                                                                      
++------+                                                                                                                                                      
+| 1    |                                                                                                                                                      
++------+                                                                                                                                                      
+1 row in set (0.00 sec) 
