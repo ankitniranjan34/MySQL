@@ -31,3 +31,8 @@ Query OK, 1 row affected (0.02 sec)
 +---------+-------------+------+-----+---------+-------+                                                                                                      
 4 rows in set (0.02 sec)      
 
+mysql> alter table student modify roll_no varchar(2);
+Query OK, 0 rows affected (0.09 sec) 
+
+mysql> truncate table student; 
+Query OK, 0 rows affected (0.04 sec)
