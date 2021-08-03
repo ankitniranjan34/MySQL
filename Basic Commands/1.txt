@@ -1,0 +1,33 @@
+mysql> show databases;                                                                                                                                        
++--------------------+                                                                                                                                        
+| Database           |                                                                                                                                        
++--------------------+                                                                                                                                        
+| information_schema |                                                                                                                                        
+| invoice            |                                                                                                                                        
+| mysql              |                                                                                                                                        
+| performance_schema |                                                                                                                                        
+| sys                |                                                                                                                                        
++--------------------+                                                                                                                                        
+5 rows in set (0.10 sec) 
+
+mysql> create database example;
+Query OK, 1 row affected (0.02 sec) 
+
+ create table student (name varchar(20), email varchar(20), dob date);
+ Query OK, 0 rows affected (0.07 sec)
+ 
+ mysql> alter table student add (roll_no int);
+ Query OK, 0 rows affected (0.04 sec)
+ Records: 0  Duplicates: 0  Warnings: 0
+ 
+ mysql> desc student; 
+ +---------+-------------+------+-----+---------+-------+                                                                                                      
+| Field   | Type        | Null | Key | Default | Extra |                                                                                                      
++---------+-------------+------+-----+---------+-------+                                                                                                      
+| name    | varchar(20) | YES  |     | NULL    |       |                                                                                                      
+| email   | varchar(20) | YES  |     | NULL    |       |                                                                                                      
+| dob     | date        | YES  |     | NULL    |       |                                                                                                      
+| roll_no | int         | YES  |     | NULL    |       |                                                                                                      
++---------+-------------+------+-----+---------+-------+                                                                                                      
+4 rows in set (0.02 sec)      
+
